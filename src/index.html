@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currency Converter</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
-  <script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Currency Converter</h1>
+      </header>
+      <main>
+        <div class="inputs">
+          <input type="text" name="userInput" id="userInput" value="1" />
+          <select name="from" id="from"></select>
+          <select name="to" id="to"></select>
+        </div>
+        <div class="result">
+          <p id="result-text">result here</p>
+        </div>
+        <div class="info">
+          <p class="info-from">1 united state dollar equals</p>
+          <p class="info-to">0.83 euro</p>
+        </div>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>
