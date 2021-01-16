@@ -15,18 +15,32 @@
       <header>
         <h1>Currency Converter</h1>
       </header>
+
       <main>
-        <div class="inputs">
-          <input type="text" name="userInput" id="userInput" value="1" />
-          <select name="from" id="from"></select>
-          <select name="to" id="to"></select>
+        <!-- First Row -->
+        <div class="row">
+          <div class="col">
+            <input type="text" name="userInput" id="userInput" value="1" />
+          </div>
+          <div class="col">
+            <select name="from" id="from"></select>
+          </div>
+          <div class="col">
+            <select name="to" id="to"></select>
+          </div>
         </div>
-        <div class="result">
+        <!-- Second Row -->
+        <div class="row">
+          <button class="button" id="exchange">Exchange</button>
+        </div>
+        <!-- Third Row -->
+        <div class="row">
           <p id="result-text">result here</p>
         </div>
-        <div class="info">
+        <!-- Fourth Row -->
+        <div class="row">
           <p class="info-from">1 united state dollar equals</p>
-          <p class="info-to">0.83 euro</p>
+          <p class="info-to">1 united state dollar equals</p>
         </div>
       </main>
     </div>
