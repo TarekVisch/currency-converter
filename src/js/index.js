@@ -1,6 +1,5 @@
 /* State */
-const exchangeApi =
-  'https://v6.exchangerate-api.com/v6/aaa3027db922decf50ea9c44/latest';
+const exchangeApi = 'https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest';
 const currencies = [
   { name: 'United States dollar', code: 'USD' },
   { name: 'Euro', code: 'EUR' },
