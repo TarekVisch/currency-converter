@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,27 +20,29 @@
         <!-- First Row -->
         <div class="row">
           <div class="col">
+            <h3>Convert</h3>
             <input type="text" name="userInput" id="userInput" value="1" />
           </div>
           <div class="col">
+            <h3>from</h3>
             <select name="from" id="from"></select>
           </div>
           <div class="col">
+            <h3>to</h3>
             <select name="to" id="to"></select>
           </div>
         </div>
         <!-- Second Row -->
         <div class="row">
-          <button class="button" id="exchange">Exchange</button>
+          <div class="col">
+            <button class="button" id="exchange">Exchange</button>
+          </div>
         </div>
         <!-- Third Row -->
         <div class="row">
-          <p id="result-text">result here</p>
-        </div>
-        <!-- Fourth Row -->
-        <div class="row">
-          <p class="info-from">1 united state dollar equals</p>
-          <p class="info-to">1 united state dollar equals</p>
+          <div class="col">
+            <p id="result-text">Converted 💰 will appear here.</p>
+          </div>
         </div>
       </main>
     </div>

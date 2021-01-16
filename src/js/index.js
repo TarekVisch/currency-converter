@@ -45,8 +45,6 @@ const fromCurrency = document.getElementById('from');
 const toCurrency = document.getElementById('to');
 const exchangeBtn = document.getElementById('exchange');
 const resultDOM = document.getElementById('result-text');
-const infoFrom = document.querySelector('.info-from');
-const infoTo = document.querySelector('.info-to');
 
 function renderCurrencies(currencyArray, domElement) {
   for (let currency of currencyArray) {
@@ -86,9 +84,9 @@ function exchange() {
           const conversionRates = exchange.conversion_rates;
           const exchangeResult =
             userInputValue * conversionRates[toCurrencyValue];
-          resultDOM.textContent = `${userInputValue} ${fromCurrencyValue} = ${exchangeResult} ${toCurrencyValue}`;
-          infoFrom.textContent = `1 ${selectedFromCurrency} equals`;
-          infoTo.textContent = `${conversionRates[toCurrencyValue]} ${selectedToCurrency}`;
+          resultDOM.textContent = `${userInputValue} ${selectedFromCurrency} = ${exchangeResult.toFixed(
+            2
+          )} ${selectedToCurrency}`;
         } else {
           resultDOM.textContent =
             "Sorry, we're unable to fetch the conversion rates.";
@@ -98,9 +96,7 @@ function exchange() {
         console.log(error.message);
       });
   } else {
-    resultDOM.textContent = `${userInputValue} ${fromCurrencyValue} = ${userInputValue} ${toCurrencyValue}`;
-    infoFrom.textContent = `1 ${selectedFromCurrency} equals`;
-    infoTo.textContent = `1 ${selectedToCurrency}`;
+    resultDOM.textContent = `${userInputValue} ${selectedFromCurrency} = ${userInputValue} ${selectedToCurrency}`;
   }
 }
 
